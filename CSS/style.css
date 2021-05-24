@@ -1,15 +1,28 @@
 @font-face {
   src: url('../Fonts/NunitoSans-Regular.ttf');
+  font-family: "Nunito Sans";
 }
 
-.body {
+body {
   margin: 0;
-  font-family: Nunito Sans; Arial
+  font-family: 'Nunito Sans', Arial;
+  font-size: 11px;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1256px;
+}
+
+.phone {
+  color:#E3B873;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  text-align: right;
+  margin: 37px 296px 30px 1016px;
+  text-decoration-line: underline;
 }
 
 .button {
@@ -21,7 +34,11 @@
   padding: 13px 33px;
   color: white;
   text-transform: uppercase;
+  font-family: Nunito Sans;
+  font-size: 11px;
   font-style: italic;
+  text-align: right;
+  margin: 24px 90px 22px 1187px;
 }
 
 .logo {
@@ -51,4 +68,8 @@
 .header-navigation__item a {
   text-decoration:none;
   color: white;
+}
+
+a:hover {
+  color:#E3B873;
 }
