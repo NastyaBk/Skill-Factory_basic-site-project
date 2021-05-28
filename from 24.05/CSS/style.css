@@ -1,0 +1,80 @@
+@font-face {
+  src: url('../Fonts/NunitoSans-Regular.ttf');
+  font-family: "Nunito Sans";
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Nunito Sans', Arial;
+  font-size: 11px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1256px;
+  display: flex;
+}
+
+.phone {
+  color:#E3B873;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  text-align: right;
+  text-decoration-line: underline;
+}
+
+.button {
+  background: #E3B873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  outline: 0;
+  border: 0;
+  padding: 13px 33px;
+  color: white;
+  text-transform: uppercase;
+  font-family: Nunito Sans;
+  font-size: 11px;
+  font-style: italic;
+  text-align: right;
+}
+
+.logo {
+  color: #E3B873;
+}
+
+.header {
+  background-color:black;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between; 
+  height: 83px;
+  align-items: center;
+}
+
+.header-navigation {
+  list-style: none;
+  display: flex;
+}
+
+.header-navigation__item {
+  margin-right: 47px;
+}
+
+.header-navigation__item a {
+  text-decoration:none;
+  color: white;
+}
+
+a:hover {
+  color:#E3B873;
+}
+
+@media screen (max-width: 1300px) {
+  .header-navigation {
+    display: none;
+  }
+}
