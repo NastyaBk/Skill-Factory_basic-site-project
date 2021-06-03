@@ -4,7 +4,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: 'Nunito Sans', Arial;
   font-size: 11px;
 }
@@ -12,6 +12,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1256px;
+  display: flex;
 }
 
 .phone {
@@ -21,7 +22,6 @@ body {
   font-weight: normal;
   font-size: 11px;
   text-align: right;
-  margin: 37px 296px 30px 1016px;
   text-decoration-line: underline;
 }
 
@@ -38,7 +38,6 @@ body {
   font-size: 11px;
   font-style: italic;
   text-align: right;
-  margin: 24px 90px 22px 1187px;
 }
 
 .logo {
@@ -66,10 +65,77 @@ body {
 }
 
 .header-navigation__item a {
-  text-decoration:none;
+  text-decoration: none;
   color: white;
 }
 
 a:hover {
   color:#E3B873;
+}
+
+@media screen and (max-width: 1300px) {
+  .header-navigation {
+    display: none;
+  }
+}
+
+.button {
+    display: none;
+}
+
+.logo {
+    margin: 0 auto;
+}
+
+.phone {
+    margin: 0 auto;
+}
+
+.hero {
+  background-image: url(../images/hero.jpg);
+  background-size: cover;
+  height: 707px;
+  position: relative;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-overlay {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.title {
+  margin: 0;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 194px 628px 408px 134px;
+}
+
+span {
+  color: #E3B873;
+}
+
+p.hero-text {
+  margin: 0;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 36px;
+  color: #FFFFFF;
+  text-align: justify;
 }
